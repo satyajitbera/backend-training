@@ -1,11 +1,23 @@
 const express = require('express');
-const abc = require('../introduction/intro')
+const abc = require('./intro.js');
 const router = express.Router();
+const logger = require('../logger/logger.js')
+const helper = require('../util/helper.js')
+const falana = require("../validator/formatter.js")
 
 router.get('/test-me', function (req, res) {
+ 
     console.log('My batch is', abc.name)
-    abc.printName()
-    res.send('My second ever api!')
+    abc.func1()
+    logger.funny()
+    helper.printDate()
+    helper.printMonth()
+    console.log(helper.getBatchInfo)
+    falana.forTrim()
+    falana.lowerCase()
+    falana.upperCase()
+    res.send('This Is my first api')
+ 
 });
 
 
