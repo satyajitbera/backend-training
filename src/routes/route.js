@@ -31,8 +31,9 @@ router.get('/student-details/:name', function(req, res){
     console.log("This is the request "+ JSON.stringify(requestParams))
     let studentName = requestParams.name
     console.log('Name of the student is ', studentName)
+    let studentDetails = studentName + " " + studentName
     
-    res.send('Dummy response')
+    res.send(studentDetails)
 })
 
 module.exports = router;
