@@ -138,6 +138,22 @@ router.get('/sol1', function (req, res) {
        
         res.send(miss );
       });
+
+      router.post("/test-post-api-1", function (req, res){
+      const content= req.body.name
+      console.log(content)
+      res.send({msg: content, status: true})
+      })
+
+      router.post("/test-post-api-2", function(req,res){
+      let arr = [12, "plutonium"]
+      let ele = req.body.name
+      arr.push(ele)
+      res.send({msg: arr, status: true})
+
+
+      })
+
       
      
 
