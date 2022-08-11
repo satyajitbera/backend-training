@@ -119,6 +119,61 @@ router.post('/players', function (req, res) {
 })
 
 
+//query params     /get-query-1?mycoolvar=something&xyz=functionup
+router.get("/get-query-1", function(req,res){
+let data = req.query
+let var1 = data.mycoolvar
+let var2= data.xyz
+res.send({data: var1, dat: var2, status: true})
+console.log(data.mycoolvar)
+})
+
+router.get("/get-query-2", function(req,res){
+let data = req.query.input
+console.log(data)
+let myArr = [25,10,40,36,7,78,295,30,15,45,32,20]
+//const finalArr = myArr.filter(x => x > data)
+let finalArr = []
+for(i=0; i<myArr.length; i++){
+if(myArr[i] > data)
+finalArr.push(myArr[i])
+}
+res.send({ data: finalArr})
+})
+// finding 18+ votter
+let mylist = [
+    {
+        "name": "satyajit",
+        "age": 21,
+        "votingStatus": "false"
+    },
+    {
+        "name": "soumyakanti",
+        "age": 17,
+        "votingStatus": "false"
+    },{
+        "name": "satish",
+        "age": 18,
+        "votingStatus": "false"
+    },{
+        "name": "animesh",
+        "age": 25,
+        "votingStatus": "false"
+    },
+
+]
+router.get("/votter", function(req,res){
+    let finalArr = []
+    let votingAge = req.query.votingAge
+    for (i=0; i< mylist.length;i++){
+        if(mylist[i].age >= votingAge)
+        mylist[i].votingStatus = "true"
+        finalArr.push(mylist[i])
+    }
+    res.send({data: finalArr})
+})
+
+
 
 
 
