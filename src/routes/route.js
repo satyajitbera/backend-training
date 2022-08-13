@@ -166,10 +166,13 @@ router.get("/votter", function(req,res){
     let finalArr = []
     let votingAge = req.query.votingAge
     for (i=0; i< mylist.length;i++){
-        if(mylist[i].age >= votingAge)
+        if(mylist[i].age >= votingAge){
         mylist[i].votingStatus = "true"
         finalArr.push(mylist[i])
+        }
+       
     }
+    console.log(finalArr)
     res.send({data: finalArr})
 })
 
