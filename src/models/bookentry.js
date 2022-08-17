@@ -6,12 +6,27 @@ const bookSchema = new mongoos.Schema({
         unique : true
     },
 
-    authorName : {
-        type : String,
-        required : true
-    },
+    authorName : String,
     category : String,
-    year: Number
+    year: Number,
+    tags :[String],
+    ispublished : Boolean,
+    date :{
+        type: Date,
+        default : Date.now
+          },
+    prices : {
+        indianPrice: String,
+        europianPrice: String
+    },
+    sales: {
+        type: Number,
+        default : 10
+    }
+
+    
+
+
 },
 {timestamps : true}
 );
