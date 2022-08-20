@@ -1,0 +1,42 @@
+"name": "Penguin",
+        "headQuarter": "turky",
+        "_id": "62ffb418f4297ac2d3aa758d",2
+        "name": "Bloomsbury",
+        "headQuarter": "switzerland",
+        "_id": "62ffb45df4297ac2d3aa758f",3
+        "headQuarter": "jaypur",
+        "_id": "62ffb490f4297ac2d3aa7591",2
+        "name": "HarperCollins",
+        "headQuarter": "mirzapur",
+        "_id": "62ffb4bbf4297ac2d3aa7593",2
+        -------------------------------------------------------------------------------
+authorName": "v.b. bhandari",
+        "age": 85,
+        "address": "mumbai",
+        "rating": 2,
+        "_id": "62ffb502f4297ac2d3aa7595"2
+         "authorName": "r.s. khurmi",
+        "age": 75,
+        "address": "asansol",
+        "rating": 3,
+        "_id": "62ffb56af4297ac2d3aa7597",2
+        "authorName": "sarat chandra",
+        "age": 25,
+        "address": "barrakpur",
+        "rating": 3.5,
+        id: 62ffb957f4297ac2d3aa7599, 2
+        authorName": "raghuram rajan",
+        "age": 60,
+        "address": "new delhi",
+        "rating": 4,
+        "_id": "62ffb9b9f4297ac2d3aa759b",1
+        "authorName": "j.k. rowling",
+        "age": 45,
+        "address": "bandra",
+        "rating": 4.5,
+        "_id": "62ffba47f4297ac2d3aa759d",1
+        authorName": "kaji nazrul islam",
+        "age": 40,
+        "address": "kattak",
+        "rating": 5,
+        "_id": "62ffba77f4297ac2d3aa759f",1
