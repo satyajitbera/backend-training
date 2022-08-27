@@ -6,7 +6,7 @@ const createProduct= async function (req, res) {
     console.log(data)
 
     let savedData= await productModel.create(data)
-    res.send({msg: "savedData"})
+    res.send({msg: savedData})
 }
 
 
